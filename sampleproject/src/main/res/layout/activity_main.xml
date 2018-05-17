@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.nipunbirla.sampleproject.MainActivity">
+
+    <com.nipunbirla.swipe3drotateview.Swipe3DRotateView
+        android:id="@+id/rotateView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+       >
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="#40934567">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivSelectedEmojiFlip"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="top|center_horizontal"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="#40134567">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/ivSelectedEmoji"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="top|center_horizontal"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </com.nipunbirla.swipe3drotateview.Swipe3DRotateView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:id="@+id/tvNotice"
+        android:textSize="16sp"
+        android:text="Swipe to flip the board."
+        android:textColor="#ffffff" />
+
+    <reaction.ReactionView
+        android:id="@+id/reaction"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
